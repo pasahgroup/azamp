@@ -49,7 +49,7 @@ class dpoPay
     {
 
         //Generate a transaction token
-        $transToken = dpoPay::CreateChargeToken("https://webhook.site/c2b49c9c-c70f-4408-a5ee-2b95abcf97dc", "https://webhook.site/c2b49c9c-c70f-4408-a5ee-2b95abcf97dc", "Pay product", $amount, $PaymentCurrency);
+        $transToken = dpoPay::CreateChargeToken("https://webhook.site/5f6e8360-74c1-4b9a-9a6f-8b926a07bc09", "https://webhook.site/5f6e8360-74c1-4b9a-9a6f-8b926a07bc09", "Pay product", $amount, $PaymentCurrency);
         if ($transToken->Result == 000) {
             $ServiceDate = date('Y-m-d H:i:s');
             $endpoint = dpoPay::$endpoint_url;

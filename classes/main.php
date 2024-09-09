@@ -354,10 +354,6 @@ public function editEvent($name, $description, $id){
         
 
     
-    
-        
-
-    
     }    
 
 }
