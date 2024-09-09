@@ -5,7 +5,7 @@ if (strpos($url, 'dashboard') !== false) {
 }else{
     $path = "PHPMailer/";
 }
-include(''.$path.'/PHPMailerAutoload.php');
+// include(''.$path.'/PHPMailerAutoload.php');
  include_once(''.$path.'/src/PHPMailer.php');
   include_once(''.$path.'/src/SMTP.php');
   include_once(''.$path.'/src/Exception.php');
