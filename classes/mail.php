@@ -8,9 +8,9 @@ if (strpos($url, 'dashboard') !== false) {
 include(''.$path.'/PHPMailerAutoload.php');
 class Mail {
     public static $security = "ssl";
-    public static $host = "premium75.web-hosting.com";
+    public static $host = "mail.rhonds.co.tz";
     public static $port = "465";
-    public static $username = "buruwawa@gmail.com";
+    public static $username = "info@rhonds.co.tz";
     public static $password = "pasah12345!";
     public static $setFrom = "info@rhonds.co.tz";
 
