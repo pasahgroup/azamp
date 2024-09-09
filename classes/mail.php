@@ -6,6 +6,9 @@ if (strpos($url, 'dashboard') !== false) {
     $path = "PHPMailer/";
 }
 include(''.$path.'/PHPMailerAutoload.php');
+ include_once(''.$path.'/src/PHPMailer.php');
+  include_once(''.$path.'/src/SMTP.php');
+  include_once(''.$path.'/src/Exception.php');
 class Mail {
     public static $security = "ssl";
     public static $host = "mail.rhonds.co.tz";
