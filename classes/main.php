@@ -201,9 +201,7 @@ class main extends db{
 
             print_r($stmt->errorInfo());
 
-        }
-        
-
+        }     
 	
     }
 
@@ -219,8 +217,7 @@ class main extends db{
 
             print_r($stmt->errorInfo());
 
-        }
-        
+        }       
 
     
     } 

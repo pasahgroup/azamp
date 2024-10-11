@@ -26,6 +26,7 @@ $main = new main();
 
     //Choose from these providers for MNO "Airtel" "Tigo" "Halopesa" "Azampesa"
   $pay = $azampay->mnocheckout($acc_id,  $amount, 'TZS', $payment_method);
+print_r($pay);
 
   //Display
   $display =  $pay[0]->message;
@@ -33,12 +34,7 @@ $main = new main();
       //Insert transaction into table
     $insert = $main->insertTransaction($first_name, $last_name, 'Product title here', $amount, "TZS", $pay[1], $pay[1], $payment_method, $email);
     //header("Location: ".$pay[0]->paymentUrl."");
-  }
-
-
-  
- 
-  
+  } 
 
 }
 ?>

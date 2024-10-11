@@ -12,8 +12,6 @@ include '../classes/azampay.php';
 
 
 $main = new main();
-
-
 $query = $main->all_query_nolimit_s('transactions', 'ORDER BY 1 DESC LIMIT 1', 'reference', $_GET['txn']);
 
 if($query[0] > 0)
@@ -29,8 +27,5 @@ if($query[0] > 0)
 {
    
 }
-
-
 echo $status;
-
 }

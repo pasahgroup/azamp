@@ -5,15 +5,18 @@ class azampay
 {   //Options are sandbox and production
   private static $environment = "sandbox";
 	private static $appName = "pasah car hiring system";
-	private static $clientId = "873ccd3b-e154-4d9a-9d3d-68f28b0baf7a";
-	private static $clientSecret = "KzuPLIgpIqMVivZu7DiHI3JiSAx0sQUOWO6foM5ttROFIFWkP5XgGhHzmynBZ33FHyenNCVw2pVLakrFYpu7xuUPaBChHT/DPD4dqlVm4XS5L/J13brswJOLTyzWuAQMe/PY16AhjQ2uA8Wp2CxpjYCgeTiwAnSRs6JnwoQG6RtCNN0q0UTXEosS19hIlngqdlE+km688Q4iuepEY4zTos1MpsQqLFiQZ1OP1ZVmftWdBxiWr86t9Opy2ZEroSN7BOhkvRGROdCsUCMF1LEQjGkBu8Jp62BvQzJwBcSxOKnE0sdXlnLvRzInGED6Mz5HCanwPi2zhZa3RnRbAvQXLIysn1y3/fm4PtkMOgtpiktMlQuQIro/NaPHeLyFFKdqn5MV3NgPWbGiWeT9UFeg07hncPHXlLdajZq7yjLPl7loak1GZqc5x+30vRt06kTTPZTfFeVH4d2s0fHrcJvnimEooOEjSbWlm9OD7fZBt+fYvuzCv6gYpF/prc1LIpWttx6K003ZpeHr1TrqCoENYjR0xho+1v6Lh0Qjg17BrVAIN9hMx1q/q/numQjJrEYbaUXuRuN67HwzmXm/XUdT7h/cZ4/gKM1z7wYiBhh/B4tzKS76I534GeVNzk6FZ1HuXzppcYzEoUc4MB0hJ9x5H6+tzLaTWTAjH4rqW4ooPfo=";
+	private static $clientId = "82d1927f-f929-40a3-a953-799990ea0ae4";
+	private static $clientSecret = "JmS/TD42lE6UxKI9dzCm4gXr5Bump91xfT0LnTAlLF1iB1YydSqpHX/mJ82NokE2Cv/Y20jRsp8L2xxn889sM5a3WUNQacOVXZ3S73i726CmNITh6BIfRE5MPVT7/rq2a3NALMjSA/bZs9uiSIYIYQ7D8C5raZrLsq2enlWtKr2OsEGFEpRJPiP8uAlrTrp+W+0fqW2eyTBzVLM+po5p0S7D5bB6MAp0+sBCs7t/ByrFgJu5VnJ8EtcJrVaYGaRoHAJstaEMj4XGe9PiTGRHT8uIHPRlDHUUcTTQ6rKmavrt7ZwazwuuZBWO0Jrw4o9FxHs4oVn7eosGshM/3Kfno/KkD64W7Ai5KrVbQBTicL4HRO4+gk4mOWpsDT/OcK1amqaYNXexfN1RQ6BTvayJoFW2KB78dO9C2Wu/MFTY2E2SVpsiZlohY428rLym3PUDhxEIYjasiKBKvifzvusRDASqD9DKN0W+efBCc5M/3mD5obV2vNRtFugfQ47OdJ4vzbC8WaDtYopdrrqoaC/55092VK0go+0OCTDStxdVDObF1vq877/murAjPTra2Rt89U1YSnp8SKkFe0K4hS4hYJxg7mADygBsv/6tkh/2T1I3CUOP0EtRht20dv2jawjTxtO4LpkC7Qxp7F5KWsPKXiC9shCSF8RWtemSkXuUoEc=";
 
 	//Environment URLS
 	public static function envUrls()
 	{
-		$auth_url = "https://authenticator-sandbox.azampay.co.tz";
-		$checkout_url = "https://sandbox.azampay.co.tz";
+		// $auth_url = "https://authenticator-sandbox.azampay.co.tz";
+		// $checkout_url = "https://sandbox.azampay.co.tz";
         
+          $auth_url = "https://authenticator.azampay.co.tz";
+    $checkout_url = "https://checkout.azampay.co.tz";
+    
         //Base URLs for production
 		if (AzamPay::$environment == "production") {
 			$auth_url = "https://authenticator.azampay.co.tz";
@@ -28,9 +31,7 @@ class azampay
 	public static function authtoken()
 	{
 
-
             $curl = curl_init();
-
             curl_setopt_array($curl, array(
               CURLOPT_URL => 'https://authenticator-sandbox.azampay.co.tz/AppRegistration/GenerateToken',
               CURLOPT_RETURNTRANSFER => true,
@@ -75,8 +76,8 @@ class azampay
                 CURLOPT_POSTFIELDS =>'{
                 "accountNumber": "'.$accountNumber.'",
                 "additionalProperties": {
-                  "property1": 878346737777,
-                  "property2": 878346737777
+                  "property1": 0764706227,
+                  "property2": 0764706227
                 },
                 "amount": "'.$amount.'",
                 "currency": "'.$currency.'",

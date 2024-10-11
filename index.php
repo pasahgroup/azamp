@@ -52,8 +52,6 @@
                  <br>
                 
                 <button class="btn btn-primary" type="submit" name="donate_btn">PAY NOW</button>
-
-
             </form>
         </section>
     </div>
