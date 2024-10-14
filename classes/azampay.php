@@ -3,7 +3,7 @@
 class azampay
 
 {   //Options are sandbox and production
-  private static $environment = "sandbox";
+  private static $environment = "production";
 	private static $appName = "pasah car hiring system";
 	private static $clientId = "873ccd3b-e154-4d9a-9d3d-68f28b0baf7a";
 	private static $clientSecret = "V4ttBnz9yjvFPUQkMXWYLc4YUoRqQSD9vFSPCIhCIyN5gFsn95tG8GMcgWt4ZVIy0CyzKtXUcxlFHqRiyc6Kv7TxcJDnfe7upm06BsGGrAtxHXOF7HiUQg174rdmM+atKAkemg9U0R/FMHOXwkLx2jKFNqvfgWLdnQRfB6dQKTkGqq3d5IZGIM5KD/cDYQwViKeSRs31PupCz5rfb/IoiBWO5Se2WNUntSTDjuMWu9njwUoHXdjb1we3fQQvW+wyd+C4kv8JzKNoeRboz17frZIHXEZ97k78kdX5qqOwGr4WAAov0nkXiCgLPu1JoquYd5x7S9KFEIj0IViBgNToOLbY1oGU6MXnIz6v19spraB1ZDLS7rtDlEtfZ6riYsPDPZI4sM3tvaBN1w4Y7+rtWypygrsDd7wr7S8BtSxBmpzUQfzMd98EztTbJU/HdFb1lXK3HdeY9Prr2pwfqPRftralZTGHGkp032QlNI2FLd+KDlB2Tuw/gmps1sbhhVRHQZeFH9UWPzXQfPTG4eHqvd9DkvrSK6p7E7+AuVHtKEbIkaqUrYcICgx8y3biqvrfs2Tn5elcWGbILUwlXL076ruNL5eZmcFiYtbK/R+gBgihPpHGpLaiAA5gzCwv9K9a16E4Nszz691inzwqBHViWRGV8xO4/4DMbRcV3E+3H0Y=";
