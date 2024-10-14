@@ -9,8 +9,6 @@ class dpoPay
     //Create a DPO token
     public  static function CreateChargeToken($RedirectURL, $BackURL, $ServiceDescription, $PaymentAmount, $PaymentCurrency)
 
-
-
     {
         $ServiceDate = date('Y-m-d H:i:s');
         $endpoint = dpoPay::$endpoint_url;

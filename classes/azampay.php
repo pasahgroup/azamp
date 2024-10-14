@@ -11,11 +11,11 @@ class azampay
 	//Environment URLS
 	public static function envUrls()
 	{
-		// $auth_url = "https://authenticator-sandbox.azampay.co.tz";
-		// $checkout_url = "https://sandbox.azampay.co.tz";
+		$auth_url = "https://authenticator-sandbox.azampay.co.tz";
+		$checkout_url = "https://sandbox.azampay.co.tz";
         
-          $auth_url = "https://authenticator.azampay.co.tz";
-    $checkout_url = "https://checkout.azampay.co.tz";
+    //       $auth_url = "https://authenticator.azampay.co.tz";
+    // $checkout_url = "https://checkout.azampay.co.tz";
     
         //Base URLs for production
 		if (AzamPay::$environment == "production") {
