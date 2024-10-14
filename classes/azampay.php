@@ -30,7 +30,7 @@ class azampay
 	//Authorisation token
 	public static function authtoken()
 	{
-
+  // CURLOPT_URL => 'https://authenticator-sandbox.azampay.co.tz/AppRegistration/GenerateToken',
             $curl = curl_init();
             curl_setopt_array($curl, array(
               CURLOPT_URL => 'https://authenticator.azampay.co.tz/AppRegistration/GenerateToken',
